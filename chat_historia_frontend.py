@@ -13,9 +13,9 @@ import requests
 import streamlit as st
 
 # URL base de la API Gateway donde se encuentra desplegada la función Lambda
-API_URL = "https://xrpqa9btfi.execute-api.us-east-2.amazonaws.com/dev"
+API_URL = st.secrets["API_URL"]
 # API Key para la API Rest
-API_KEY = "esytondutk1dl1aDODxwj1GUxuAGi4lo87rCJK5J"
+API_KEY = st.secrets["API_KEY"]
 
 
 def iniciar_chat(usuario, llm="OpenAI"):
